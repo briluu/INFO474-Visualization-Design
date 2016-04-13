@@ -6,7 +6,7 @@ $(function() {
 
 
 	function getData() {
-		Plotly.d3.csv("../antibiotics_data.csv", function(data) { 
+		Plotly.d3.csv("antibiotics_data.csv", function(data) { 
 			plotVisualOne(data) 
 			plotVisualTwo(data);
 			plotVisualThree(data);
