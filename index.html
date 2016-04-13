@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+
+<html lang="en">
+	<head>
+		<link rel="stylesheet" href="css/main.css"/>
+
+		<title> Visualization Design </title>
+	</head>
+	<body>
+
+		<div class="jumbotron">
+			<h1>Visualization Design</h1>	
+			<p>This is a visualization project designed at making different static visualizations with the same dataset. Each visualization is accompanied by a question that it solves, and a rationale for that specific visualization.
+			</p>
+
+		</div>
+
+		<hr>
+			<h2> Visualization One: How does Streptomycin and Neomycin compare in effectiveness against different strains of bacteria?</h2>
+		<div id="visualOne">
+		</div>
+
+		<hr> 
+
+			<h2> Visualization Two: How does Streptomycin fare against all strains of bacteria?</h2>
+		<div id="visualTwo">
+
+		</div>
+
+		<hr>
+
+			<h2> Visualization Three: How many antibiotics are Gram-positive?</h2>
+		<div id="visualThree">
+		</div>
+
+		<h1> Rationale </h1>
+
+		<div class="container">
+			<h2> Rationale for Visualization One</h2>
+			<p> 
+			For the first visualization, I answered the question: "How does Streptomycin and Neomycin compare in effectiveness against different strains of bacteria?" I used a grouped bar graph to answer this question because each bar graph encodes the value of Streptomycin and Neomycin's effectiveness. This allows the viewer to use the elementary percetual task of perceiving length to determine how strong of a concentration it needs to fight the bacteria strain. In addition, the horizontal positioning of each bar graph tells the user which strain of bacteria is being tested. To allow the user to compare each antibiotic's effectiveness, the bars are placed next to each other to show the difference in heights.  
+			</p>
+			<p> In terms of other design decisions, I let the color of the bar graph be blue and orange, as these two colors strongly contrast one another, allowing the user to easily perceive difference in the bar graph area. The x-axis was labeled with the bacteria strains, and the y-axis is labeled with the minimum inhibitory concentration. I chose the x-asis as bacteria strains because I wanted the user to compare the effectiveness of the antibiotics with ALL strains of bacteria, and not just one. The graph was scaled from 0 to the maximum minimum inhibitory concentration value, showing the user the full range of these concentrations.
+			</p>
+			<p>
+			All together, not only did my design decision let me compare an antibiotic's effectiveness against one strain of bacteria, but it allowed me to compare it against all strains of bacteria, in comparison with another antibiotic. 
+			</p>
+
+		</div>
+
+		<div class="container">
+			<h2> Rationale for Visualization Two</h2>
+			<p> 
+			For the second visualization, I answered a more general question: "How effective is Streptomycin against all strains of bacteria?". To answer this question, I used a scatterplot, with the vertical and horizontal position of each point to encode the minimum inhibitory concentration and the type of bacteria, respectively. Using a scatterplot is great because it uses the positioning of each point to encode two values. Seeing as position is one of the most accurate elementary perceptual tasks, this scatterplot effectively communicates to the user the value of Streptomycin's minimum inhibitory concentration through the vertical positioning of each point. The horizontal positioning tells the user which bacteria strain it is referring to.
+			</p>
+			<p>
+			In terms of other design decisions, I chose an arbitrary color of purple for the dots themselves. The scale of the graph ranges from 0 to 15, which scales perfectly for the minimum and maximum value of Streptomycin's minimum inhibitory concentration which is 0.03 and 14.
+			</p>
+			<p> Overall, a scatterplot is a great graph to encode the values of the minimum inhibitory concentration and the different strains of bacteria through the vertical and horizontal positioning of the points. 
+			</p>
+
+		</div>
+
+		<div class="container">
+			<h2> Rationale for Visualization Three</h2>
+			<p> 
+				The last visualization seeks to answer the simple question: "How many antibiotics are Gram-positive?" I used a simple bar graph for this answer that encodes the number of antibiotics that are Gram-positive or Gram-negative in the height/length of the bar graph. The horizontal positioning of the bar graph encodes the qualitative value of whether the the bar is negative or positive. In conclusion, since the question is very simple, this simple bar graph can answer the question easily by the elementary perceptual task of length. 
+				In terms of other design decisions, the color was an arbitrary teal color, and the scaling of the graph fit the range of the data. 
+			</p>
+
+		</div>
+
+
+
+
+
+		<script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+		<script src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+		<script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+		<script src="js/app.js"></script>
+	</body>
+</html>
